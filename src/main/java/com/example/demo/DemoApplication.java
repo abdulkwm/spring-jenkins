@@ -17,7 +17,7 @@ public class DemoApplication {
 	public static Logger logger = LoggerFactory.getLogger(DemoApplication.class);
 	@GetMapping("/message")
 	public String sayHi(){
-		logger.info("Application executed");
+		logger.info("Application is executed");
 		return "<h1 style='color:red; font-size:50px; text-align:center'>Hello, World!</h1>";
 	}
 }
