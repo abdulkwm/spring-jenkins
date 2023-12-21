@@ -15,9 +15,9 @@ public class DemoApplication {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	public static Logger logger = LoggerFactory.getLogger(DemoApplication.class);
-	@GetMapping("/message")
+	@GetMapping
 	public String sayHi(){
 		logger.info("Application is executed");
-		return "<h1 style='color:red; font-size:50px; text-align:center'>Hello, World!</h1>";
+		return "Hello, World!";
 	}
 }
