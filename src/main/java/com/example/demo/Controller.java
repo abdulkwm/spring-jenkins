@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping
 public class Controller {
     public static Logger logger = LoggerFactory.getLogger(Controller.class);
-    @GetMapping("hello")
+    @GetMapping
     public String sayHello(){
         logger.info("the app is executed");
         return "Hello World!";
