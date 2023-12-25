@@ -12,6 +12,7 @@ pipeline {
                 git branch: 'main', credentialsId: 'github-pat', url: 'https://github.com/abdulkwm/spring-jenkins.git'
             }
         }
+
         stage('clean and compile') {
             steps {
                 sh 'mvn clean compile'
