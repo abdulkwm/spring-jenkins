@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping
+@RequestMapping("/api/v1/")
 public class Controller {
     public static Logger logger = LoggerFactory.getLogger(Controller.class);
-    @GetMapping
+    @GetMapping("/hello")
     public String sayHello(){
         logger.info("the app is executed");
         return "Hello World!";
